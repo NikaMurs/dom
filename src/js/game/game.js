@@ -1,4 +1,6 @@
-class Game {
+import "./game.css";
+
+export class Game {
   constructor(field) {
     this.field = field;
     this.columns = this.field.querySelectorAll(".fieldColumn");
@@ -8,7 +10,8 @@ class Game {
 
   changePosition() {
     const img = document.createElement("img");
-    img.src = "../src/js/game/img/goblin.png";
+    img.src =
+      "https://raw.githubusercontent.com/netology-code/ahj-homeworks/video/dom/pic/goblin.png";
 
     let newRandomColumn = getRandomInt(4);
     let newRandomCell = getRandomInt(4);

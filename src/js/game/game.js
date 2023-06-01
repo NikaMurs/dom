@@ -27,13 +27,13 @@ export class Game {
     this.columns[this.column]
       .querySelectorAll(".fieldCell")
       [this.cell].appendChild(img);
+  }
 
-    setTimeout(() => {
-      this.columns[this.column]
-        .querySelectorAll(".fieldCell")
-        [this.cell].querySelector("img")
-        .remove();
-    }, 1000);
+  deleteLast() {
+    this.columns[this.column]
+      .querySelectorAll(".fieldCell")
+      [this.cell].querySelector("img")
+      .remove();
   }
 }
 

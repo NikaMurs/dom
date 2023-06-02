@@ -1,4 +1,5 @@
 import "./game.css";
+import goblinImg from "./img/goblin.png";
 
 export class Game {
   constructor(field) {
@@ -10,8 +11,8 @@ export class Game {
 
   changePosition() {
     const img = document.createElement("img");
-    img.src =
-      "https://raw.githubusercontent.com/netology-code/ahj-homeworks/video/dom/pic/goblin.png";
+    img.src = goblinImg;
+    console.log(img.src);
 
     let newRandomColumn = getRandomInt(4);
     let newRandomCell = getRandomInt(4);
